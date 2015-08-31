@@ -2,6 +2,11 @@
 import challenge_2 as c2
 
 def decrypt_single_xor_str(s):
+    '''
+    decrypt_singe_xor_str(str) -> (int, str)
+    Finds the string with the highest number of alphabets
+    and spaces after being single-byte XOR'ed.
+    '''
     freq_dict = {}
     for j in xrange(256):
         decrypted_str = ""
@@ -32,4 +37,4 @@ def decrypt_single_xor_str(s):
 
 if __name__ == "__main__":
     ip_str = "1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736"
-    print decrypt_single_xor_str(ip_str)
+    print decrypt_single_xor_str(ip_str)[1]

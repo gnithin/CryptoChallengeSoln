@@ -1,0 +1,28 @@
+$ ./challenge_1.py
+Assertion Passed -
+49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d
+------------------------------
+
+Assertion Passed -
+Man is distinguished, not only by his reason, but by this singular passion from
+other animals, which is a lust of the mind, that by a perseverance of delight
+in the continued and indefatigable generation of knowledge, exceeds the short
+vehemence of any carnal pleasure.
+------------------------------
+
+Assertion Passed -
+any carnal pleasure
+------------------------------
+
+Assertion Passed -
+any carnal pleasur
+------------------------------
+
+Assertion Passed -
+any carnal pleasu
+------------------------------
+
+Assertion Passed -
+any carnal pleas
+------------------------------
+

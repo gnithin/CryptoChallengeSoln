@@ -9,9 +9,6 @@ def lib_hex_to_base64(hex_str):
     # 2. Using base64 lib(Works out of the box)
     import base64
     return base64.b64encode(hex_str.decode("hex"))
-    
-
-
 
 def hex_to_base64(hex_str):
     # Simple algorithm explanation [here](http://www.herongyang.com/encoding/Base64-Encoding-Algorithm.html)
@@ -29,7 +26,7 @@ def hex_to_base64(hex_str):
     bin_str = ""
     for e in hex_str:
         # have to convert hex to bin and keep it at length
-        # for 4 bits (Really difficult to find bug :P)
+        # for 4 bits (A really difficult to find bug :P)
         bin_str += (bin(int(e,16))[2:]).zfill(4)
 
     # Checking the amount of padding

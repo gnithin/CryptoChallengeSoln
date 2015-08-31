@@ -1,4 +1,25 @@
+#!/usr/bin/env python
+
+def assert_(bool_val, print_val=''):
+    '''
+    assert(boolean, [str]) => None
+    This is a helper function to help assert values.
+    eg- assert_(1==2)
+    '''
+    try:
+        assert bool_val
+    except AssertionError:
+        print "Assertion Failed -\n" + print_val
+    else:
+        print "Assertion Passed -\n" + print_val
+    print "-"*30 + "\n"
+
 def xor(a, b):
+    '''
+    xor(str, str) => str
+    Takes in 2 hex strings and returns a hex string 
+    which is a xor of the 2.
+    '''
     # Helper function to convert hex to bin
     hex_to_bin = lambda x:"".join((bin(int(e,16))[2:]).zfill(4) for e in x)
     a = hex_to_bin(a)
@@ -19,5 +40,4 @@ if __name__ == "__main__":
 
     expected_op_str = "746865206b696420646f6e277420706c6179"
 
-    assert op_str == expected_op_str
-    print "Success!"
+    assert_(op_str == expected_op_str)

@@ -32,9 +32,10 @@ def decrypt_single_xor_str(s):
         if int(freq_dict[k]["count"]) > max_count:
             max_count = freq_dict[k]["count"]
             max_str = freq_dict[k]["str"]
-
-    return max_count, max_str
+            max_key = k
+    print "Almost done"
+    return (max_count, max_str, max_key)
 
 if __name__ == "__main__":
     ip_str = "1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736"
-    print decrypt_single_xor_str(ip_str)[1]
+    print decrypt_single_xor_str(ip_str)[2]
